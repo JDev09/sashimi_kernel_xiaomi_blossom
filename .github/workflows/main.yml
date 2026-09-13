@@ -11,7 +11,7 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/JDev09/sashimi
+          kernel-url: https://github.com/JDev09/sashimi_kernel_xiaomi_blossom
           kernel-branch: sashimi
           config: blossom_defconfig
           arch: arm64

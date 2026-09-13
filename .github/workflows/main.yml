@@ -7,6 +7,7 @@ jobs:
   build-kernel:
     name: Build Redmi 9C
     runs-on: ubuntu-22.04
+
     steps:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
@@ -15,3 +16,4 @@ jobs:
           kernel-branch: sashimi
           config: blossom_defconfig
           arch: arm64
+          anykernel3: true

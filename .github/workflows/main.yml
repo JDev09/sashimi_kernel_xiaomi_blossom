@@ -1,1 +1,18 @@
 
+name: Redmi 9C Kernel
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-kernel:
+    name: Build Redmi 9C
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build Kernel
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/JDev09/sashimi
+          kernel-branch: sashimi
+          config: blossom_defconfig
+          arch: arm64
